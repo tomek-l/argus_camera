@@ -1,4 +1,4 @@
-set(TegraMM_ROOT $ENV{HOME}/tegra_multimedia_api)
+set(TegraMM_ROOT /usr/src/jetson_multimedia_api)
 
 set(TegraMM_FOUND FALSE)
 
