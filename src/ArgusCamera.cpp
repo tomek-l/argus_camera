@@ -313,8 +313,8 @@ int ArgusCamera::read(uint8_t *data)
   );
   fd = iNativeBuffer->createNvBuffer(resolution, 
     NvBufferColorFormat::NvBufferColorFormat_YUV420,
-    NvBufferLayout_Pitch, &status);
-  if (Argus::STATUS_OK != status) {
+    NvBufferLayout_Pitch);
+  if (fd == -1) {
     return 6; // failed to create native buffer
   }
 
