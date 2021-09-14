@@ -24,7 +24,7 @@ cd argus_camera
 mkdir build
 cd build
 cmake ..
-make -j4
+make -j$(nproc)
 sudo make install
 cd ..
 sudo python setup.py install
